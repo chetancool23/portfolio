@@ -18,7 +18,6 @@ body {
 
 .banner-img {
     overflow-y: hidden;
-    /* height: 300px; */
     margin-top: 8px;
 }
 
@@ -35,7 +34,7 @@ body {
 }
 
 .featured-work-img{
-    height: 240px;
+    max-height: 240px;
     width: 100%;
     position: relative;
 }
@@ -72,8 +71,8 @@ body {
 .featured-work-img .overlay > .description{
     color: white;
     text-align:center;
-    line-height: 240px;
     font-size: 16px;
+    padding-top: 25%;
 }
 /*
     Media Queries
