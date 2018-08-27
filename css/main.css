@@ -16,17 +16,9 @@ body {
     max-width: 1680px;
 } 
 
-.bg-image{
-    height: 300px;
-    width: 100%;
-    max-width: 100%;
-    max-height: 100%;
-    background: url('../img/banner-1.PNG');
-}
-
 .banner-img {
-    height: 300px;
     overflow-y: hidden;
+    /* height: 300px; */
     margin-top: 8px;
 }
 
@@ -42,10 +34,41 @@ body {
     width: 100%;
 }
 
+
+.featured-work {
+    margin-bottom: 20px;
+}
+
 .featured-work-caption, .featured-work-caption + a  {
     text-align: center;
 }
 
 .featured-work-caption + a {
     display: block;
+}
+
+/*
+    Media Queries
+*/
+@media screen and (min-width: 768px) {
+
+    .banner-img > img{
+        height: 300px;
+    }
+    
+    .featured-image-section:first-child {
+        padding-left: 0;
+    }
+
+    .featured-image-section:last-child {
+        padding-right: 0;
+    }
+
+    .featured-image-section:nth-child(2) {
+        padding: 0;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    
 }
